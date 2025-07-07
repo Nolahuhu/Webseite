@@ -6,14 +6,16 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden text-white flex items-center justify-center text-center">
-      <video
-        autoPlay
-        muted
-        loop
-        className="absolute top-0 left-0 w-full h-full object-cover"
-      >
-        <source src="Videos/hero-background.mp4" type="video/mp4" />
-      </video>
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="absolute top-0 left-0 w-full h-full object-cover"
+    >
+      <source src="/Videos/hero-background-silent.mp4" type="video/mp4" />
+    </video>
+
 
       <div className="absolute inset-0 bg-black/50 z-10" />
 

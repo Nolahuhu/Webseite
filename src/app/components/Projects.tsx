@@ -10,11 +10,11 @@ export default function Projects() {
       image: "/projects/tcg.png",
       github: "https://github.com/Nolahuhu/TCG",
     },
-        {
+    {
       title: "DSML Price Prediction",
-        tech: "Python, scikit-learn, XGBoost, Pandas",
-        image: "/images/dsml.png",
-        github: "https://github.com/theladykiller/DSML-Price-prediction",
+      tech: "Python, scikit-learn, XGBoost, Pandas",
+      image: "/images/dsml.png",
+      github: "https://github.com/theladykiller/DSML-Price-prediction",
     },
     {
       title: "TourPlanner Desktop-App",
@@ -25,7 +25,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="bg-black text-white px-6 py-20">
+    <section id="projects" className="bg-black text-white px-4 sm:px-6 py-20">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           className="text-3xl font-bold mb-12 text-center"
@@ -49,20 +49,21 @@ export default function Projects() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-            <motion.div
-              className="group md:w-1/2 overflow-hidden rounded-xl border-4 border-transparent hover:border-white hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] transition-all duration-300"
-              whileHover={{ y: -10 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
-            >
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={800}
-                height={500}
-                className="rounded-xl"
-              />
-            </motion.div>
-              <div className="md:w-1/2 space-y-4">
+              <motion.div
+                className="group w-full md:w-1/2 overflow-hidden rounded-xl border-4 border-transparent hover:border-white hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] transition-all duration-300"
+                whileHover={{ y: -10 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={800}
+                  height={500}
+                  layout="responsive"
+                  className="rounded-xl"
+                />
+              </motion.div>
+              <div className="w-full md:w-1/2 space-y-4">
                 <h3 className="text-2xl font-semibold">{project.title}</h3>
                 <p className="italic text-sm text-gray-400">{project.tech}</p>
                 <div className="flex gap-6 mt-4">

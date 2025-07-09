@@ -8,9 +8,9 @@ export default function Contact() {
     >
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Sende mir eine Nachricht!</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Send me a message!</h2>
         <p className="text-lg text-gray-300">
-          Hast du Fragen oder ein Projektvorschlag? Nur zu{" "}
+          Do you have any questions or a project proposal? Go ahead{" "}
           <span className="text-xl">😊</span>
         </p>
       </div>

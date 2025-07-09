@@ -34,7 +34,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Meine Projekte
+          My Projects
         </motion.h2>
 
         <div className="space-y-24">

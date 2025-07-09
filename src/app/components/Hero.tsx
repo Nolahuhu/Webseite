@@ -25,7 +25,8 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 mt-20">
-          Hello, I'm <span className="text-[#FFD700]">Alon</span>
+          {"Hello, I'm "}
+          <span className="text-[#FFD700]">Alon</span>
         </h1>
         <p className="text-lg sm:text-xl text-white mb-10">
           Computer Science student and Software Developer
